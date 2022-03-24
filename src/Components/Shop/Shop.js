@@ -3,18 +3,27 @@ import Product from '../Product/Product';
 import './Shop.css';
 const Shop = () => {
     const [products, setProducts] = useState([]);
+
+    // event handler that can bring data(if event fired) from the particuler product component
+    const addToCart = (name ) =>{
+         console.log("You have clicked: ",name.name);
+    }
+    //fetching fake data fron public folder
     useEffect( ()=>{
         fetch("products.json")
         .then(res => res.json())
         .then(data => setProducts(data)) 
-    },[]);
-    console.log(products[3]);
+    },[]); 
     return (
         <div className='shop-container'>
             <div className='products-container'>
-                 {products.map(product => (
-                     <Product img={product.img} name={product.name} price={product.price} seller={product.seller} rating={product.ratings} key={product.id}/>
-                 ))}
+                {products.map(product => (
+                    <Product 
+                        product = {product}
+                        key = {product.id}
+                        addToCart = {addToCart}
+                    />
+                ))}
             </div>
             <div className='cart-container'>
                 <h2>The cart will be here</h2>

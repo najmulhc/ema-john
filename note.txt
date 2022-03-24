@@ -1,3 +1,25 @@
 made a basic react project named e-commerce
 get the figma file and opened on figma web app
 made the header section on the Header Component
+
+to send a event handler to the parent componet:(সালা ইভেন্ট ফায়ার করবো চাইল্ডে, হ্যান্ডেল করবে প্যারেন্টে! )
+1. we have to write the eventHandler function on the parent Component
+2. pass that function through props to the child Component
+3. on the event on the child Component, we will call the function(that we got from props, written in the parent component)
+4. the function will work as if it is written on the child component. this way we can send event data to the parent component. 
+
+on parent component:
+    const funcName = () =>{
+        // code goes here
+    }
+
+    return (
+        <Child funcName={funcName} />
+    )
+
+on child Component:
+    return(
+        <button onEvent={props.funcName}></button>
+    )
+
+we can add parameters on that function using caller function;(this way we can send data from a child component to its parent component)
