@@ -1,9 +1,9 @@
 header{
     max-width: 100vw;
-    padding: 10px 10vw;
+    padding: 10px 5vw;
     background-color: #1c2b35;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 ul li  {
     list-style-type: none ;

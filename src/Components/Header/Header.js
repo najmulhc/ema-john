@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import logo from'./Logo.svg';
+import logo from'../../images/Logo.svg';
 
 const Header = () => {
     return (
@@ -9,9 +9,10 @@ const Header = () => {
             <nav>
             <ul>
                 <li >
-                    <a href='https://www.amazon.com' >Order</a>
-                    <a href='#' >Order Review</a>
-                    <a href='#' >Manage inventory</a>
+                    <a href='/shop'>Shop</a>
+                    <a href='/order'>Order</a>
+                    <a href='/inventory'>Inventory</a>
+                    <a href='/about-us'>About Us</a>
                 </li>
             </ul>
             </nav>
