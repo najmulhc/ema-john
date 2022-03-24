@@ -1,0 +1,3 @@
+made a basic react project named e-commerce
+get the figma file and opened on figma web app
+made the header section on the Header Component
