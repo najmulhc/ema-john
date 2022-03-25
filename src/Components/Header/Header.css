@@ -1,0 +1,24 @@
+.header-container{
+    background-color: #1C2B35;
+    height: 80px;
+    padding: 0 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-container img{
+    height: 40px;
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul {
+    display: flex;
+}
+li a {
+    text-decoration: none; 
+    font-family: lato;
+    font-size: 17px;
+    color: white;
+    padding: 0 20px;
+}
