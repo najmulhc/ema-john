@@ -4,7 +4,14 @@ const Cart = (props) => {
     const {cartLength} = props;
     return (
         <div className='cart-container'>
-            <h1>You have {cartLength} items in your cart</h1>
+            <h2 className='order-sum'>Order Summary</h2>
+            <div className="calculation">
+                <p>Selected Items: {cartLength}</p>
+                <p>Total Price: $1200</p>
+                <p>Total Shipping Charge: $5 </p>
+                <p>Tax: $23 </p>
+            </div>
+            <h3>Grand Total: $1553</h3>
         </div>
     );
 };
