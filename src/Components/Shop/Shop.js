@@ -28,7 +28,7 @@ const Shop = () => {
                         )})}
             </div>
             <Cart
-                cartLength={cart.length}
+                cart={cart}
             />
         </div>
     );
