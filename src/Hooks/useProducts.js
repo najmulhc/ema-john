@@ -1,0 +1,13 @@
+import { useEffect, useState } from "react"
+
+const useProducts = () =>{
+    const [products, setProducts] = useState([]);// using a state hook
+    // getting data from api using useEffect hook
+    useEffect( () =>{
+        fetch('https://raw.githubusercontent.com/ProgrammingHero1/ema-john-resources/main/fakeData/products.json')
+        .then(res => res.json())
+        .then(data => setProducts(data))
+    },[])
+    return [products, setProducts]
+}
+export default useProducts;
